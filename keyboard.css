@@ -165,7 +165,7 @@ body {
 	position: absolute;
 	height: inherit;
 	width: inherit;
-	background: url("assets\ravirajendran.jpg");
+	background: url("assets/ravirajendran.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -181,7 +181,7 @@ body {
 	position: absolute;
 	height: inherit;
 	width: inherit;
-	background: url("assets\profile-picture.png");
+	background: url("assets/profile-picture.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
