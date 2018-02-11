@@ -10,8 +10,6 @@ $(document).ready(function() {
 	  if (index < message.length) {
 		if (message[index] != " ") {
 			var e = $("#"+ message[index].toLowerCase()).find('div');
-			console.log(e);
-
 			e.fadeOut('fast').delay(5).fadeIn('fast');
 		}
 		$(target).append(message[index++]);
@@ -22,7 +20,6 @@ $(document).ready(function() {
 	};
 
 	var start_blinking = function () {
-		console.log('Blinkng');
 		$(target).addClass('blink');
 		setTimeout(function() {
 			$(target).removeClass('blink');
@@ -36,11 +33,9 @@ $(document).ready(function() {
 		
 		setTimeout(function() {
 			$(".aboutme").hide();
-			$(".paper-content").css({"border-width": "0px",
-									"border-color": "transparent"});	
+			$(".paper-content").css({"border-width": "0px", "border-color": "transparent"});	
 		}, 1300);
 		setTimeout(function() {
-			console.log('Moving name');
 			$(".paper-content").addClass('move-name');
 		}, 1700);
 	};
