@@ -10,7 +10,7 @@ $(document).ready(function() {
 	  if (index < message.length) {
 		if (message[index] != " ") {
 			var e = $("#"+ message[index].toLowerCase()).find('div');
-			e.fadeOut('fast').delay(5).fadeIn('fast');
+			e.fadeOut('fast').fadeIn('fast');
 		}
 		$(target).append(message[index++]);
 		setTimeout(function () { 
@@ -51,7 +51,7 @@ $(document).ready(function() {
 	}, 1000);
 
 	setTimeout(function() {
-		start_typing(target, name, 0, 350)	
+		start_typing(target, name, 0, 300)	
 	}, 3500);
 
 	setTimeout(function() {
@@ -60,10 +60,10 @@ $(document).ready(function() {
 
 	setTimeout(function() {
 		moving_name();
-	}, 9000);
+	}, 9500);
 	
 	setTimeout(function() {
 		show_content();
-	}, 12000);
+	}, 12500);
 
 });
