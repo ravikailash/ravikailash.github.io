@@ -31,12 +31,17 @@ var can_animate = check_size();
 
 $(document).ready(function() {
 	// function to display the contents
-	if(! profile_shown) {
-		$('.profile').on('click', function() {
+
+	$('.profile').on("click", function() {
+		if (! profile_shown) {
 			$(this).addClass('is_clicked');
-		});
-		profile_shown = true;
-	}
+			$('.contact-info').show().delay(2000).fadeOut("slow");
+			profile_shown = true;
+		}
+		else {
+			$('.contact-info').toggle();
+		}
+	});
 	
 	// Making language content to appear first
 	var all_skills = document.querySelectorAll('.skills-content');
@@ -45,9 +50,6 @@ $(document).ready(function() {
 	});
 	$('#lang-skills').show();
 	
-	$('.profile').on("click", function() {
-		$('.contact-info').toggle();
-	});
 	
 	// choose contents
 	$('.index-box').on('click', function (e) {
