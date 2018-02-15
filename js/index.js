@@ -115,6 +115,7 @@ $(document).ready(function() {
 		} else if (current === 'tr-close') {
 			$(".project-selector").hide();
 			$("#project_content").hide();
+			$(".project-domain").hide();
 	   }
 
 		current = current.substring(0, 3);
