@@ -1,0 +1,161 @@
+/* #######################################################
+			coding page - styles
+####################################################### */
+
+.coding-description {
+	position: absolute;
+	border-top: 1px solid #eee;
+	font-size: 20px;
+	height: 70px;
+	width: auto;
+	left: 10%;
+	top: 15%;
+	color: gray;
+	padding-top: 10px;
+	margin-right: 9vw;
+	overflow-y: auto;
+}
+.coding-links {
+	position: absolute;
+	height: auto;
+	width: 110px;
+	top: 30%;
+	margin-left: 9vw;
+	overflow: auto;
+}
+.code-site {
+	position: relative;
+	display: block;
+	min-height: 90px;
+	width: 100px;
+}
+.code-site img {
+	position: absolute;
+	height: 45px;
+	width: 45px;
+	margin: 3px 0px 0px 20px;
+}
+.code-footer {
+	position: absolute;
+	height: 30px;
+	width: inherit;
+	min-width: 100px;
+	color: gray;
+	font-size: 20px;
+	letter-spacing: 0px;
+	text-align: center;
+	font-family: Nunito, serif;
+	margin-top: 57px;
+	margin-bottom: 0px;
+	padding: 0;
+}
+.code-img:hover {
+	transform: scale(1.2);
+}
+.code-img:hover ~ .code-footer {
+	color: navajowhite;
+	border-bottom: 2px solid gray;
+}
+
+/* ###################################################################### */
+
+
+.code-samples{
+	position: absolute;
+	height: 68%;
+	width: 70%;
+	background: black;
+	top: 30%;
+	left: 26%;
+}
+
+.code-langs-wrapper {
+	position: absolute;
+	height: 100%;
+	left: 0%;
+	width: 15%;
+	background: #457B9D;
+	display: block;
+}
+
+.code-lang {
+	position: relative;
+	width: 90%;
+	height: 10%;
+	margin-left: 4%;
+	margin-top: 10%;
+	border: 1px solid darkgray;
+	display: inline-flex;
+}
+
+.lang-name {
+	position: absolute;
+	display: flex;
+	height: 100%;
+	width: 70%;
+	justify-content: center;
+	padding-top: 10px;
+	color: #ddd;
+}
+
+.lang-icon {
+	position: absolute;
+	height: 100%;
+	width: 30%;
+	right: 0%;
+}
+
+.lang-icon img {
+	height: 33px;
+	width: 33px;
+	bottom: 0%;
+	margin-top: 5px;
+}
+
+img.lang-icon-small {
+	height: 28px;
+	width: 28px;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+
+.code-content-wrapper {
+	position: absolute;
+	height: 100%;
+	left: 15%;
+	width: 85%;
+	background: darkcyan;
+	overflow: auto;
+}
+
+.code-content {
+	position: absolute;
+	height: 100%;
+	left: 1%;
+	width: 99%;
+	overflow: auto;
+}
+
+.code-lang:hover {
+	transform: scale(1.1);
+}
+
+.is_active {
+	transform: scale(1.1);
+	background: darkcyan; 
+	border-width: 4px; 
+	border-right: 0px;
+}
+
+/* ################################################
+			coding page media-styles
+################################################ */
+@media (max-width: 1092px) {
+	.code-lang .lang-icon{
+		display: none;
+	}
+	
+	.code-lang .lang-name {
+		width: 100%;
+	}
+}

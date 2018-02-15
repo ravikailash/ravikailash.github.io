@@ -1,0 +1,117 @@
+/* #######################################################
+			skills page - styles
+####################################################### */
+
+.skills-overall {
+	position: absolute;
+	top: calc(50vh - 200px);
+	left: 15vw;
+	height: 30vh;
+	width: 70vw;
+	min-height: 400px;
+	min-width: 700px;
+	max-height: 500px;
+	max-width: 1150px;
+}
+.skills-header {
+	position: absolute;
+	top: 0px;
+	height: 10vh;
+	width: 70vw;
+	min-height: 80px;
+	min-width: 700px;
+	max-width: 1150px;
+	display: inline-flex;
+}
+.skill-topic {
+	position: relative;
+	height: inherit;
+	min-height: 90px;
+	min-width: 77px;
+	width: 13%;
+	color: #b8b9be;
+	margin: 0px 10px 0 10px;
+}
+.skill-name {
+	position: relative;
+	height: 6.5vh;
+	min-height: 60px;
+	min-width: 85px;
+	font-family: Nunito, serif;
+	font-size: 1em;
+	overflow: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	border: 3px solid darkgray;
+	border-radius: 5px;
+}
+.skill-name:hover {
+	transform: scale(1.1);
+	box-shadow: 5px 8px 15px coral;
+}
+.skill-indicator {
+	position: absolute;
+	bottom: 6%;
+	left: 40%;
+	width: 0; 
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid gray;
+}
+.skills-content {
+	position: absolute;
+	height: calc(100% - 23%);
+	width: 70vw;
+	min-width: 700px;
+	max-width: 1150px;
+	bottom: 0%;
+	border: 3px solid coral;
+	border-radius: 10px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.skill-icon {
+	position: relative;
+	min-height: 80px;
+	min-width: 80px;
+	max-height: 120px;
+	max-width: 120px;
+	margin: 10px 10px 10px 20px;
+	display: inline-block;
+	float: left;
+}
+.skill-logo {
+	position: absolute;
+	min-height: 40px;
+	min-width: 40px;
+	max-height: 120px;
+	max-width: 130px;
+	height: 80px;
+	width: 80px;
+}
+.skill-desc {
+	transition: 0.5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.skill-text {
+	/*background-color: #4CAF50;*/
+	background-color: darkslategray;
+	color: white;
+	font-size: 16px;
+	padding: 16px 32px;
+}
+.skill-icon:hover .skill-logo{
+	opacity: 0.3;
+	border: 1px solid purple;
+	border-radius: 10px;
+}
+.skill-icon:hover .skill-desc{
+	opacity: 1;
+}
